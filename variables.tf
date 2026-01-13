@@ -36,6 +36,12 @@ variable "object_id" {
   default     = null
 }
 
+variable "subscription_id" {
+  type        = string
+  description = "(Optional) Specifies the Id of a Log Analytics Workspace where Diagnostics Data should be sent."
+  default     = null
+}
+
 variable "virtual_network_subnet_ids" {
   type        = list(any)
   description = "(Optional) The Azure subnets that can access Key Vault."
