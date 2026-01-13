@@ -30,11 +30,7 @@ variable "ip_rules" {
   description = "(Optional) The ranges of IPs to can access Key Vault."
   default     = []
 }
-variable "object_id" {
-  type        = string
-  description = "(Optional) The ranges of IPs to can access Key Vault."
-  default     = []
-}
+variable "object_id" {}
 
 variable "virtual_network_subnet_ids" {
   type        = list(any)
