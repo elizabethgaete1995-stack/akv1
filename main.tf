@@ -150,7 +150,7 @@ resource "azurerm_role_assignment" "kv_role_assignment" {
   count                = var.enable_rbac_authorization ? 1 : 0
   scope                = azurerm_key_vault.akv_sa.id
   role_definition_name = "Key Vault Administrator"
-  principal_id         = var.object_id
+  #principal_id         = var.object_id
 }
 /*
 resource "azurerm_monitor_diagnostic_setting" "law" {
