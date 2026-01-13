@@ -7,7 +7,7 @@ variable "location" {
   description = "(Required) Specifies the supported Azure location where the Resource Group exists. Changing this forces a new resource to be created."
   type        = string
   default     = null
-}.
+}
 
 variable "arm_tenant_id" {
   description = "(Required) Specifies the supported Azure location where the Resource Group exists. Changing this forces a new resource to be created."
