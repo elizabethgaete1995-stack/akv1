@@ -14,7 +14,10 @@ variable "arm_tenant_id" {
   type        = string
   default     = null
 }
-
+variable "app_name" {
+  description = "(Required) App name of the resource. Used for Naming. ( 3 characters) "
+  type        = string
+}
 
 variable "sku_name" {
   type        = string
