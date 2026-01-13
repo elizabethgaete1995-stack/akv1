@@ -150,12 +150,6 @@ variable "environment" {
   type        = string
 }
 
-
-variable "app_name" {
-  description = "(Required) App acronym of the resource. Used for Naming (6 characters)."
-  type        = string
-}
-
 variable "sequence_number" {
   description = "(Required) Secuence number of the resource. Used for Naming (3 characters)."
   type        = string
