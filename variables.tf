@@ -7,7 +7,14 @@ variable "location" {
   description = "(Required) Specifies the supported Azure location where the Resource Group exists. Changing this forces a new resource to be created."
   type        = string
   default     = null
+}.
+
+variable "arm_tenant_id" {
+  description = "(Required) Specifies the supported Azure location where the Resource Group exists. Changing this forces a new resource to be created."
+  type        = string
+  default     = null
 }
+
 
 variable "sku_name" {
   type        = string
@@ -136,7 +143,7 @@ variable "environment" {
 }
 
 
-variable "app_acronym" {
+variable "app_name" {
   description = "(Required) App acronym of the resource. Used for Naming (6 characters)."
   type        = string
 }
