@@ -69,6 +69,7 @@ resource "azurerm_key_vault" "akv_sa" {
 
 }
 
+/*
 resource "azurerm_key_vault_access_policy" "kvt_access_policy" {
   count = !var.enable_rbac_authorization ? 1 : 0
 
@@ -152,7 +153,7 @@ resource "azurerm_role_assignment" "kv_role_assignment" {
   role_definition_name = "Key Vault Administrator"
   #principal_id         = var.object_id
 }
-/*
+
 resource "azurerm_monitor_diagnostic_setting" "law" {
 
   count = local.diagnostic_monitor_enabled ? 1 : 0
