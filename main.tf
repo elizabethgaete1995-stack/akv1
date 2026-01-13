@@ -63,7 +63,7 @@ resource "azurerm_key_vault" "akv_sa" {
   network_acls {
     default_action             = "Deny"
     bypass                     = var.target_scenario ? "AzureServices" : "None"
-    ip_rules                   = distinct(compact(concat(var.ip_rules, module.module-IPwhitelist.ip_whitelist)))
+    #ip_rules                   = distinct(compact(concat(var.ip_rules, module.module-IPwhitelist.ip_whitelist)))
     virtual_network_subnet_ids = var.virtual_network_subnet_ids
   }
 
